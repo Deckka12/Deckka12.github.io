@@ -4,15 +4,7 @@
 <title></title>
 <meta charset="utf-8"><link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-<script>
-var Name;
-  function Welcom() {
-  	  Name = prompt("Привет, как тебя зовут?");
-  	 if(Name != null){
-    	document.getElementById("demo").innerHTML = "Привет," + Name.toString();
-	}
-  }
-</script>
+
 
 
 </head>
@@ -43,13 +35,13 @@ var Name;
 <p>2. Вывести все числа от 1 до 40, с использованием 3-х разных циклов</br>
 	Результат:
 </p>
-<button type="button" onclick="ForWhile()">Задание 2</button>
+<button type="button" onclick="Usloviya()">Задание 2</button>
 <br>
 
 <p>3. Создайте вирусную страницу с постоянно повторяющемся сообщением</br>
 	Результат:
 </p>
-<button type="button" onclick="Spams()">Задание 3</button>
+<button type="button" onclick="Spamer()">Задание 3</button>
 <br>
 
 
@@ -57,17 +49,17 @@ var Name;
 <p>4. Запросить у пользователя любое число больше 5, в случае правильного ответа выдать окошко с поздравлением, в случае неправильного ответа вывести повторное окно с вопросом (помните, что пользователь может нажать "отмена", помните о типах данных)</br>
 	Результат:
 </p>
-<button type="button" onclick="Zapros()">Задание 4</button>
+<button type="button" onclick="Pozdrav()">Задание 4</button>
 <br>
 <p>5. Звыведите четные числа от 8 до 20</br>
 	Результат:
 </p>
-<button type="button" onclick="Chetniichisla()">Задание 5</button>
+<button type="button" onclick="ChetChisl()">Задание 5</button>
 <br>
 <p>6. выведите нечетные числа от 1 до 7, пропустив 5</br>
 	Результат:
 </p>
-<button type="button" onclick="NeChetniichisla()">Задание 6</button>
+<button type="button" onclick="NOchet()">Задание 6</button>
 <br>
 <br>
 
@@ -100,29 +92,29 @@ var Name;
 <p>5. создайте 2 массива. Объедините их в один и выведите на экран полученный массив</br>
 	Результат:
 </p>
-<button type="button" onclick="WriteTyArr()">Задание 5</button>
+<button type="button" onclick="TwoMass()">Задание 5</button>
 <br>
 <p>8. Добавьте новый элемент в начало вашего объединенного массива</br>
 	Результат:
 </p>
-<button type="button" onclick="addElementArr()">Задание 8</button>
+<button type="button" onclick="newadd()">Задание 8</button>
 <br>
 <p>9. Получите сегодняшнюю дату и выведите ее на экран</br>
 	Результат:
 </p>
 
-<button type="button" onclick="GetDate()">Задание 9</button>
+<button type="button" onclick="Date()">Задание 9</button>
 <br>
 <p>10. Выведите сегодняшнюю дату в формате 11 ноября 2020 года</br>
 	Результат:
 </p>
-<button type="button" onclick="GetDateExt()">Задание 10</button>
+<button type="button" onclick="DateYears()">Задание 10</button>
 <br>
 
 <p>11. напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50</br>
 	Результат:
 </p>
-<button type="button" onclick="MultPl()">Задание 11</button>
+<button type="button" onclick="MassRand()">Задание 11</button>
 
 
 
@@ -435,7 +427,7 @@ element.style.setExpression(“width”, “100px”)</h2>
      document.getElementById("demo").innerHTML = "Привет," + Name.toString()+ " " +result;
  
    }
-   function ForWhile(){
+   function Usloviya(){
     	for (var i = 1; i <=30; i++) {
 		document.write(i + " ");
 	}
@@ -458,13 +450,13 @@ element.style.setExpression(“width”, “100px”)</h2>
 	document.write('<br>');
     }
 
-    function Spams()
+    function Spamer()
     {
     	for (var i = 1; i < 5; i++) {
-		alert("БУ-БУ");
+		alert("Залип");
 		}
     }
-  function Zapros()
+  function Pozdrav()
     {
     	var number
 		do
@@ -481,14 +473,14 @@ element.style.setExpression(“width”, “100px”)</h2>
 		}
 		while(confirm("Продолжим?"))
     }
-	function Chetniichisla(){
+	function ChetChisl(){
 		for (let i = 2; i <= 20; i++) {
   			if (i % 2 == 0) {
    			 document.write(i + ' ');
   			}
 		}
 	}
-	function NeChetniichisla(){
+	function NOchet(){
 		for (let i = 1; i <= 7; i++) {
   			if (i % 2 && i != 5) {
    			 document.write(i + ' ');
@@ -507,15 +499,15 @@ element.style.setExpression(“width”, “100px”)</h2>
 			} document.write( arr2 + " ");
         document.write('<br>');
     }
-    let arr = ["Василий", "Игорь", "Апельсин","Мандарин","Киви"];
-    let arr2 = ["Иван", "Владимир", "Сергей","Анна","Даниил"];
+    let array = ["Василий", "Игорь", "Апельсин","Мандарин","Киви"];
+    let array2 = ["Иван", "Владимир", "Сергей","Анна","Даниил"];
     function myFunction2() {
-		document.write(arr[4]);
+		document.write(array[4]);
 		document.write('<br>');
-		arr[4] = prompt('Введите любое значение');
-		document.write(arr[4]);
+		array[4] = prompt('Введите значение');
+		document.write(array[4]);
     }
-    function WriteArr() {
+    function TwoMass() {
     	document.write('<br>');
     	for (var i = 0; i < arr.length; i++) {
     		document.write(arr[i] + " ");
@@ -526,7 +518,7 @@ element.style.setExpression(“width”, “100px”)</h2>
     	var namesAll = [].concat(arr, arr2);
     	document.write(namesAll);
     }
-    function addElementArr() {
+    function newadd() {
     	document.write('<br>');	
     	var namesAll = [].concat(arr, arr2);
     	namesAll.push('Сидоров');
@@ -536,11 +528,11 @@ element.style.setExpression(“width”, “100px”)</h2>
     let days = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
     return days[date.getMonth()];
   	}
-     function GetDate() {
+     function Date() {
     	var now = new Date(); 
     	document.write(now);
     }
-    function GetDateExt() {
+    function DateYears() {
     	var now = new Date(); 
     	document.write(now.getDay() + " " 
     		+ getMonth(now) + " "
@@ -549,12 +541,21 @@ element.style.setExpression(“width”, “100px”)</h2>
     function getRandomInt(max) {
  	 	return Math.floor(Math.random() * max);
 	}
-    function MultPl(){
+    function MassRand(){
     	var a = getRandomInt(40);
     	var b = getRandomInt(40);
     	var c = a * b;
     	document.write(c);
     }
+</script>
+<script>
+var Name;
+  function Welcom() {
+  	  Name = prompt("Привет, как тебя зовут?");
+  	 if(Name != null){
+    	document.getElementById("demo").innerHTML = "Привет," + Name.toString();
+	}
+  }
 </script>
 
 		
