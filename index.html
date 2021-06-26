@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8"><link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<script>
+var Name;
+  function Welcom() {
+  	  Name = prompt("Привет, как тебя зовут?");
+  	 if(Name != null){
+    	document.getElementById("demo").innerHTML = "Привет," + Name.toString();
+	}
+  }
+</script>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+		<div class="block">
+				<div class="grid_8">
+					<div class="grid-inner">
+						<h2>Привет, сейчас я тебе расскажу чуть чуть о JavaScript</h2>
+							<div class="wrapper">
+								<figure class="img-indent"><img src="images/image1.jpg" alt=""></figure>
+									Давайте посмотрим, что такого особенного в JavaScript, чего можно достичь с его помощью и какие другие технологии хорошо с ним работают.
+								</div>
+								<H2 class="pad">Что такое JavaScript?</H2>
+		<p class="pad">Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».
+						Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.
+						Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска.
+						Это отличает JavaScript от другого языка – Java.
+						Сегодня JavaScript может выполняться не только в браузере, но и на сервере или на любом другом устройстве, которое имеет специальную программу, называющуюся «движком» JavaScript.
+					У браузера есть собственный движок, который иногда называют «виртуальная машина JavaScript».</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+<H2>Практическая работа № 1 (Типы данных. Приведение типов в JS. Циклы)</H2>	
+<p>2. Вывести все числа от 1 до 40, с использованием 3-х разных циклов</br>
+	Результат:
+</p>
+<button type="button" onclick="ForWhile()">Задание 2</button>
+<br>
+
+<p>3. Создайте вирусную страницу с постоянно повторяющемся сообщением</br>
+	Результат:
+</p>
+<button type="button" onclick="Spams()">Задание 3</button>
+<br>
+
+
+
+<p>4. Запросить у пользователя любое число больше 5, в случае правильного ответа выдать окошко с поздравлением, в случае неправильного ответа вывести повторное окно с вопросом (помните, что пользователь может нажать "отмена", помните о типах данных)</br>
+	Результат:
+</p>
+<button type="button" onclick="Zapros()">Задание 4</button>
+<br>
+<p>5. Звыведите четные числа от 8 до 20</br>
+	Результат:
+</p>
+<button type="button" onclick="Chetniichisla()">Задание 5</button>
+<br>
+<p>6. выведите нечетные числа от 1 до 7, пропустив 5</br>
+	Результат:
+</p>
+<button type="button" onclick="NeChetniichisla()">Задание 6</button>
+<br>
+<br>
+
+<br>
+
+
+
+
+
+
+
+
+<H2>Практическая работа № 2 (Массивы. Функции)</H2>	
+<p>1. создать массив 3 разными способами</br>
+	Результат:
+</p>
+<button type="button" onclick="myFunction1()">Задание 1</button>
+<br>
+
+<p>2. выведите на экран 5 член вашего массива затем измените его значение </br>
+	Результат:
+</p>
+<button type="button" onclick="myFunction2()">Задание 2</button>
+<br>
+<p>4. выведите все элементы массива, используя цикл for </br>
+	Результат:
+</p>
+<button type="button" onclick="WriteArr()">Задание 4</button>
+<br>
+<p>5. создайте 2 массива. Объедините их в один и выведите на экран полученный массив</br>
+	Результат:
+</p>
+<button type="button" onclick="WriteTyArr()">Задание 5</button>
+<br>
+<p>8. Добавьте новый элемент в начало вашего объединенного массива</br>
+	Результат:
+</p>
+<button type="button" onclick="addElementArr()">Задание 8</button>
+<br>
+<p>9. Получите сегодняшнюю дату и выведите ее на экран</br>
+	Результат:
+</p>
+
+<button type="button" onclick="GetDate()">Задание 9</button>
+<br>
+<p>10. Выведите сегодняшнюю дату в формате 11 ноября 2020 года</br>
+	Результат:
+</p>
+<button type="button" onclick="GetDateExt()">Задание 10</button>
+<br>
+
+<p>11. напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50</br>
+	Результат:
+</p>
+<button type="button" onclick="MultPl()">Задание 11</button>
+
+
+
+<p id="demo"></p>
+<button class="Glav" type="button" onclick="Welcom()">Нажми на меня</button>
+
+<br>
+
+
+
+
+
+
+
+
+<section class="main">
+ 
+<form name="quiz" action="javascript:check();" class="quizform">
+ 
+<div class="quizsection">
+ 
+ 
+    <h2>1. Можно ли в скрипте перевести посетителя на другую страницу сайта?</h2>
+     
+    <div class="answer">
+        <input name="q1" value="value1" id="value1" type="radio" checked="checked" /> Да, но только в рамках текущего сайта
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value2" id="value2" type="radio" /> Да, куда угодно
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value3" type="radio" /> Нет, нельзя
+    </div>
+ 
+</div>
+ 
+<div class="quizsection">
+ 
+    <h2>2. Верноно ли следующее утверждение: Содержимое тэга script нужно заключать в комментарии, чтобы браузеры, которые не поддерживают javascript, работали корректно?</h2>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value1" type="radio" checked="checked" /> Да
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value2" id="value2" type="radio" /> Нет
+    </div>
+  
+</div>
+ 
+<div class="quizsection">
+    <h2>3.Где в документе может располагаться тэг script по стандарту HTML ?</h2>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value1" type="radio" checked="checked" /> Только в HEAD
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value2" type="radio" /> Только в BODY
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value2" id="value3" type="radio" /> В HEAD или в BODY
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value4" type="radio" /> Где угодно, главное чтоб был
+    </div> 
+</div>
+
+<div class="quizsection">
+    <h2>4.Что такое ECMAScript?</h2>
+ 
+    <div class="answer">
+        <input name="q4" value="value1" id="value2" type="radio" checked="checked" /> Новый язык программирования
+    </div>
+ 
+    <div class="answer">
+        <input name="q4" value="value1" id="value3" type="radio" /> Переработанная реализация Javascript
+    </div>
+ 
+    <div class="answer">
+        <input name="q4" value="value2" id="value4" type="radio" /> Спецификация языка Javascript
+    </div> 
+</div>
+
+<div class="quizsection">
+    <h2>5.Можно ли через javascript подключить внешний js-файл, отсутствующий на странице?</h2>
+ 
+    <div class="answer">
+        <input name="q5" value="value1" id="value2" type="radio" checked="checked" /> Да, но только один раз
+    </div>
+ 
+    <div class="answer">
+        <input name="q5" value="value1" id="value3" type="radio" /> Да, но только до загрузки страницы
+    </div>
+ 
+    <div class="answer">
+        <input name="q5" value="value2" id="value4" type="radio" /> Да, сколько угодно файлов когда угодно
+    </div> 
+</div>
+
+<div class="quizsection">
+    <h2>6.Верно ли следующее утверждение: Любое содержимое тэга script нужно обязательно заключать в специальную секцию <![CDATA[…]]>, чтобы документ соответствовал стандарту XHTML 1.0 ?</h2>
+ 
+    <div class="answer">
+        <input name="q6" value="value2" id="value2" type="radio" checked="checked"/> Да
+    </div>
+ 
+    <div class="answer">
+        <input name="q6" value="value1" id="value3" type="radio" /> Нет
+    </div>
+</div>
+
+<div class="quizsection">
+    <h2>7.Сколько Циклов содержит JavaScript</h2>
+ 
+    <div class="answer">
+        <input name="q7" value="value1" id="value2" type="radio" checked="checked"/> 1
+    </div>
+ 
+    <div class="answer">
+        <input name="q7" value="value1" id="value3" type="radio" /> 3
+    </div>
+    <div class="answer">
+        <input name="q7" value="value2" id="value1" type="radio" /> 5
+    </div>
+</div>
+
+<div class="quizsection">
+    <h2>8.В каких браузерах будет работать этот код?
+element.style.setExpression(“width”, “100px”)</h2>
+ 
+    <div class="answer">
+        <input name="q8" value="value2" id="value2" type="radio" checked="checked" /> Internet Explorer 5.0+
+    </div>
+ 
+    <div class="answer">
+        <input name="q8" value="value1" id="value3" type="radio" /> Internet Explorer 6.0+
+    </div>
+    <div class="answer">
+        <input name="q8" value="value1" id="value1" type="radio" /> Opera
+    </div>
+</div>
+
+<div class="quizsection">
+    <h2>9.Что делает оператор ===? </h2>
+ 
+    <div class="answer">
+        <input name="q9" value="value1" id="value2" type="radio" checked="checked" /> Сравнивает по ссылке, а не по значению
+    </div>
+ 
+    <div class="answer">
+        <input name="q9" value="value2" id="value3" type="radio" /> Сравнивает без приведения типа
+    </div>
+    <div class="answer">
+        <input name="q9" value="value1" id="value1" type="radio" /> Нет такого оператора
+    </div>
+</div>
+
+<div class="quizsection">
+    <h2 class="new">10. Какая арифметическая операция приводит к ошибке в javascript?</h2>
+ 
+    <div class="answer">
+        <input name="q10" value="value1" id="value2" type="radio" checked="checked"/> Корень из отрицательного числа
+    </div>
+ 
+    <div class="answer">
+        <input name="q10" value="value1" id="value3" type="radio" /> Умножение числа на строку
+    </div>
+    <div class="answer">
+        <input name="q10" value="value2" id="value1" type="radio" /> Никакая из вышеперечисленных
+    </div>
+</div>
+ 
+<input class="button" value="Результат" type="submit">
+</input> <input class="button" value="Обновить" type="reset" />
+ 
+</form>
+ 
+</section>
+
+
+
+
+
+
+
+
+ <script type="text/javascript">// <![CDATA[
+ 
+   var result;
+    
+   function check()
+ 
+   {
+ 
+      var question;
+      var value1;
+      var value2;
+       
+       
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+       
+       
+      result = "";
+ 
+      var choice;
+       
+      for (question = 1; question <= 10; question++) {
+       
+         var q = document.forms['quiz'].elements['q'+question];
+ 
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+ 
+            if (choice == "value1") {
+               value1++;
+            }
+ 
+            if (choice == "value2") {
+               value2++;
+            }
+ 
+ 
+         }
+ 
+      if (value2 == 0) {
+ 
+         // Нет правильных ответов
+         result = "ocenka 2";
+ 
+      }
+ 
+      else if (value2 == 1) {
+ 
+         // Один правильный ответ
+         result = "ocenka 2";
+ 
+      }
+ 
+      else if (value2 == 2) {
+ 
+         // Два правильных ответа
+         result = "ocenka 2";
+ 
+      }
+ 
+      else if (value2 == 3) {
+ 
+         // Три правильных ответа
+         result = "ocenka 2";
+ 
+      }
+      else if (value2 == 4) {
+ 
+         // Три правильных ответа
+         result = "ocenka 3";
+ 
+      }
+      else if (value2 == 5) {
+ 
+         // Три правильных ответа
+         result = "ocenka 3";
+ 
+      }
+      else if (value2 == 6) {
+ 
+         // Три правильных ответа
+         result = "ocenka 3";
+ 
+      }
+      else if (value2 == 7) {
+ 
+         // Три правильных ответа
+         result = "ocenka 4";
+ 
+      }
+      else if (value2 == 8) {
+ 
+         // Три правильных ответа
+         result = "ocenka 4";
+ 
+      }
+      else if (value2 == 9) {
+ 
+         // Три правильных ответа
+         result = "ocenka 5";
+ 
+      }
+      else if (value2 == 10) {
+ 
+         // Три правильных ответа
+         result = "ocenka 5";
+ 
+      }
+ 
+ 
+      else {
+         result = "404";
+      }
+ 
+     document.getElementById("demo").innerHTML = "Привет," + Name.toString()+ " " +result;
+ 
+   }
+   function ForWhile(){
+    	for (var i = 1; i <=30; i++) {
+		document.write(i + " ");
+	}
+	document.write('<br>');
+	var i = 1;
+	while (i <= 30) {
+		document.write(i + " ");
+		i++;
+	}
+	document.write('<br>');
+	var i = 1;
+	do {
+    document.write(i + ' ');
+    i++;
+	} while (i <= 30)
+	{
+		i++;
+		document.write(i + ' ');
+	}
+	document.write('<br>');
+    }
+
+    function Spams()
+    {
+    	for (var i = 1; i < 5; i++) {
+		alert("БУ-БУ");
+		}
+    }
+  function Zapros()
+    {
+    	var number
+		do
+		{
+			number=parseInt(prompt("Введите число:", 0));
+			if(number > 5)
+			{
+				alert("Молодец");
+			}
+			else
+			{
+			alert("Повезет в следующи раз");
+			}
+		}
+		while(confirm("Продолжим?"))
+    }
+	function Chetniichisla(){
+		for (let i = 2; i <= 20; i++) {
+  			if (i % 2 == 0) {
+   			 document.write(i + ' ');
+  			}
+		}
+	}
+	function NeChetniichisla(){
+		for (let i = 1; i <= 7; i++) {
+  			if (i % 2 && i != 5) {
+   			 document.write(i + ' ');
+  			}
+		}
+	}
+
+
+	function myFunction1() {
+    	let arr = ["Киви", "Мандарин", "Помидор"];
+		document.write(arr[0] + " " + arr[1] + " " + arr[2]);
+		document.write('<br>');
+		var arr2 = [];
+		for ( i = 0; i < 10; i++ ) {
+    	arr2.push( Math.round( Math.random() * 100 ));
+			} document.write( arr2 + " ");
+        document.write('<br>');
+    }
+    let arr = ["Василий", "Игорь", "Апельсин","Мандарин","Киви"];
+    let arr2 = ["Иван", "Владимир", "Сергей","Анна","Даниил"];
+    function myFunction2() {
+		document.write(arr[4]);
+		document.write('<br>');
+		arr[4] = prompt('Введите любое значение');
+		document.write(arr[4]);
+    }
+    function WriteArr() {
+    	document.write('<br>');
+    	for (var i = 0; i < arr.length; i++) {
+    		document.write(arr[i] + " ");
+    	}	
+    }
+    function WriteTyArr() {
+    	document.write('<br>');
+    	var namesAll = [].concat(arr, arr2);
+    	document.write(namesAll);
+    }
+    function addElementArr() {
+    	document.write('<br>');	
+    	var namesAll = [].concat(arr, arr2);
+    	namesAll.push('Сидоров');
+    	document.write(namesAll);
+    }
+  	function getMonth(date) {
+    let days = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+    return days[date.getMonth()];
+  	}
+     function GetDate() {
+    	var now = new Date(); 
+    	document.write(now);
+    }
+    function GetDateExt() {
+    	var now = new Date(); 
+    	document.write(now.getDay() + " " 
+    		+ getMonth(now) + " "
+    		+ now.getFullYear());
+    }
+    function getRandomInt(max) {
+ 	 	return Math.floor(Math.random() * max);
+	}
+    function MultPl(){
+    	var a = getRandomInt(40);
+    	var b = getRandomInt(40);
+    	var c = a * b;
+    	document.write(c);
+    }
+</script>
+
+		
+</body>
+</html>
